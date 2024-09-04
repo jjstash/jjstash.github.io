@@ -1,15 +1,108 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
     <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
         html {
             scroll-behavior: smooth;
         }
+
+        body {
+            font-family: "Roboto", sans-serif;
+        }
+
+        .homepage {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #00000070;
+        }
+
+        .homepage-bg {
+            background-image: url("src/BG.png");
+            background-repeat: repeat-y;
+            background-size: 200%;
+            display: flex;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+        }
+
+
+        .homepage img {
+            width: 80%;
+        }
+
+        .homepage a {
+            text-decoration: none;
+        }
+
+        .homepage-gif {
+            margin: 10px 0 40px;
+            border-radius: 20px;
+        }
+
+        .homepage-buttons {
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+
+        .homepage-button {
+            border-style: none;
+            border-radius: 20px;
+            padding: 5px 25px;
+            width: 120px;
+            background-color: #ef4da3;
+            color: #ffffff;
+            font-family: "Oswald", sans-serif;
+            font-weight: 999;
+            text-transform: uppercase;
+            text-align: center;
+
+        }
+
+        .button-altro {
+            margin-top: 20px;
+            width: 70px;
+        }
+
+        #orari69-image {
+            display: none;
+        }
+
+
     </style>
 </head>
 <body>
-<h1>The JoJo's Flexing Adventure Stash</h1>
-<h2>Schede</h2>
+<div class="homepage-bg">etvetv</div>
+<div class="homepage">
+    <img src="src/Logo.png" class="logo">
+    <img class="homepage-gif" src="src/homepage-gif.gif" id="homepage-gif">
+    <div class="homepage-buttons">
+        <a href="#schede"><div class="homepage-button">Schede<br />Allenamenti</div></a> <a href="#guide"><div class="homepage-button">Guide per </br>Esercizi</div></a>
+
+    </div>
+
+    <a href="#altro"><div class="homepage-button button-altro">Altro</div></a>
+
+</div>
+<h2 id="schede">Schede</h2>
 
 <h3>Stronglift 5x5</h3>
 <p>Programma di allenamento della atto a sviluppare forza e massa muscolare imparando i fondamentali. Perfetto come primo approccio in palestra per arrivare a ottenere il massimo della forza in poco tempo</p>
@@ -25,38 +118,47 @@
 
 <h3>PPL DPC (Push Pull Legs Del Perfezionamento Corporeo)</h3>
 <p>Push Pull Legs con focus bodybuilding con base forza su 3 fondamentali: Bench, Deadlift e Squat</p>
-<a href="https://docs.google.com/viewerng/viewer?url=https://jjstash.github.io/PPL DPC.xlsx">Antemprima</a> - <a href="https://jjstash.github.io/PPL DPC.xlsx">Scarica</a>
+<a href="https://docs.google.com/viewerng/viewer?url=https://jjstash.github.io/schede/PPL DPC.xlsx">Antemprima</a> - <a href="https://jjstash.github.io/schede/PPL DPC.xlsx">Scarica</a>
 
 <h3>PPL SSJ STRENGHT (Push Pull Legs Super Sayan Strenght)</h3>
 <p>Push Pull Legs con focus forza basato sui fondamentali (Bench, Military Press, Deadlift e Squat), sono presenti anche esercizi a corpo tra cui Dips e Chin-ups</p>
-<a href="https://docs.google.com/viewerng/viewer?url=https://jjstash.github.io/PPL SSJ STRENGHT.xlsx">Antemprima</a> - <a href="https://jjstash.github.io/PPL SSJ STRENGHT.xlsx">Scarica</a>
+<a href="https://docs.google.com/viewerng/viewer?url=https://jjstash.github.io/schede/PPL SSJ STRENGHT.xlsx">Antemprima</a> - <a href="https://jjstash.github.io/schede/PPL SSJ STRENGHT.xlsx">Scarica</a>
 
 <h3>531 BBB JJBA (531 Boring But Big Jojo's Bizzare Adventure)</h3>
 <p>Scheda con focus forza che riprende il famoso schema 531 BBB per potenziare i fondamentali oltre il limite, contiene anche esercizi a corpo libero tra cui Dips e, Pull-Up, Chin-up</p>
 <p>Utilizzare l'app 5/3/1 per gli esercizi fondamentali impostando lo schema "less boring", invece per gli assistance usare il foglio excel</p>
-<a href="https://docs.google.com/viewerng/viewer?url=https://jjstash.github.io/531 BBB JJBA.xlsx">Antemprima</a> - <a href="https://jjstash.github.io/531 BBB JJBA.xlsx">Scarica</a>
+<a href="https://docs.google.com/viewerng/viewer?url=https://jjstash.github.io/schede/531 BBB JJBA.xlsx">Antemprima</a> - <a href="https://jjstash.github.io/schede/531 BBB JJBA.xlsx">Scarica</a>
 
 <h3>UL UM (Upper Lower Ultimate Muscle)</h3>
 <p>Scheda con solo 2 giorni di allenamento, il primo per la parte alta del corpo, il secondo per la parte bassa. Ottimo per quando si ha poco tempo in settimana ottenendo un allenamento completo</p>
-<a href="https://docs.google.com/viewerng/viewer?url=https://jjstash.github.io/UL UM.xlsx">Antemprima</a> - <a href="https://jjstash.github.io/UL UM.xlsx">Scarica</a>
+<a href="https://docs.google.com/viewerng/viewer?url=https://jjstash.github.io/schede/UL UM.xlsx">Antemprima</a> - <a href="https://jjstash.github.io/schede/UL UM.xlsx">Scarica</a>
 
-<h2>Modded Apps</h2>
+<h2 id="guide">Guide</h2>
+<h3>LINK GUIDE PER GLI ESERCIZI FONDAMENTALI</h3>
+<a href="https://stronglifts.com/squat/"><div>Squat</div></a>
+<a href="https://stronglifts.com/bench-press/"><div>Bench Press</div></a>
+<a href="https://stronglifts.com/barbell-row/"><div>Barbell Row</div></a>
+<a href="https://stronglifts.com/overhead-press/"><div>Overhead Press</div></a>
+<a href="https://stronglifts.com/pullups/"><div>Pullup and Chinup</div></a>
+<a href="https://stronglifts.com/dips/"><div>Dips</div></a>
+
+<h2 id="altro">Modded Apps</h2>
 <ul>
     <li id="app-stronglift">StrongLift | <a target="_blank" href="https://liteapks.com/stronglifts-weight-lifting-log.html">Link 1</a> - <a target="_blank" href="https://modyolo.com/stronglifts-weight-lifting-log.html">Link 2</a> | <a target="_blank" href="https://play.google.com/store/apps/details?id=com.stronglifts.app">Not Modded</a> </li>
     <li>Five/Three/One | <a href="#">WIP</a> | <a target="_blank" href="https://play.google.com/store/apps/details?id=dev.strongpigeon.fivethreeone">Not Modded</a></li>
 
 </ul>
 <h2>Misc</h2>
-<a href="#orari69" onclick="showOrari()" id="orari69">Orari 69</a>
-<img src="" id="orari69-image">
 
+<img src="src/orari69.png" id="orari69-image">
+<a href="#orari69" onclick="showOrari()" id="orari69">Orari Fermata 69</a>
 <script>
     function showOrari() {
         const IMAGE = document.querySelector("#orari69-image");
-        if (IMAGE.src === "")
-            IMAGE.src = "orari69.png";
+        if (IMAGE.style.display != "block")
+            IMAGE.style.display = "block";
         else
-            IMAGE.src === "";
+            IMAGE.style.display = "none";
     }
 </script>
 
