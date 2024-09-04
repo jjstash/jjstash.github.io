@@ -20,6 +20,15 @@
         body {
             font-family: "Roboto", sans-serif;
             font-size: 40px;
+
+            background-image: url("src/BG.png");
+            background-repeat: repeat-y;
+            background-size: 200%;
+            z-index: -1;
+        }
+
+        a {
+            color: #ef4da3;
         }
 
         .homepage {
@@ -28,20 +37,8 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color: #00000070;
+            background-color: #000000aa;
         }
-
-        .homepage-bg {
-            background-image: url("src/BG.png");
-            background-repeat: repeat-y;
-            background-size: 200%;
-            display: flex;
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            z-index: -1;
-        }
-
 
         .homepage img {
             width: 80%;
@@ -83,15 +80,146 @@
             width: 200px;
         }
 
+
+        .page-schede {
+            display: flex;
+            flex-direction: column;
+            background-color: #000000aa;
+            backdrop-filter: grayscale(100);
+            padding-top: 100px;
+            color: #fff;
+            text-align: center;
+            padding-bottom: 200px;
+        }
+
+        .page-schede h3 {
+            font-family: "Oswald", sans-serif;
+            font-weight: 999;
+            font-size: 90px;
+        }
+
+        .page-schede p {
+            font-size: 30px;
+            margin-top: 50px;
+        }
+
+        .item-scheda {
+            padding: 60px 100px;
+        }
+
+        #schede, #guide {
+            font-family: "Oswald", sans-serif;
+            font-weight: 999;
+            text-transform: uppercase;
+            text-align: center;
+            color: #ef4da3;
+            font-size: 90px;
+        }
+
+        .scheda-img-containter {
+            margin: auto;
+            height: 500px;
+            width: 500px;
+            overflow: hidden;
+            border-radius: 100px;
+        }
+
+        .scheda-img-containter img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .page-guide {
+            display: flex;
+            flex-direction: column;
+            background-color: #000000aa;
+            backdrop-filter: grayscale(100) invert(100%);
+            padding-top: 100px;
+            color: #fff;
+            text-align: center;
+            padding-bottom: 200px;
+
+        }
+
+        .guide-row {
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        .guide-item {
+            background-color: #000;
+            height: 350px;
+            width: 350px;
+            margin-top: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 60px;
+            background-color: #ffffffaa;
+            color: #000;
+            font-family: "Oswald", sans-serif;
+            font-weight: 999;
+            font-size: 70px;
+            text-transform: uppercase;
+        }
+
+        .page-guide a {
+            text-decoration: none;
+        }
+
+        .guide-item::after {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 350px;
+            width: 350px;
+            z-index: -1;
+            border-radius: 60px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .squat-guide::after {
+            background-image: url("src/squat.gif");
+        }
+
+        .bench-guide::after {
+            background-image: url("src/bench.gif");
+        }
+
+        .dead-guide::after {
+            background-image: url("src/deadlift.gif");
+        }
+
+        .bbr-guide::after {
+            background-image: url("src/deadlift.gif");
+        }
+
+        .mil-guide::after {
+            background-image: url("src/military.gif");
+        }
+
+        .pull-guide::after {
+            background-image: url("src/deadlift.gif");
+        }
+
+        .dip-guide::after {
+            background-image: url("src/deadlift.gif");
+        }
+
+
         #orari69-image {
             display: none;
         }
 
 
+
     </style>
 </head>
 <body>
-<div class="homepage-bg">etvetv</div>
 <div class="homepage">
     <img src="src/Logo.png" class="logo">
     <img class="homepage-gif" src="src/homepage-gif.gif" id="homepage-gif">
@@ -103,46 +231,78 @@
     <a href="#altro"><div class="homepage-button button-altro">Altro</div></a>
 
 </div>
-<h2 id="schede">Schede</h2>
+<div class="page-schede">
+    <h2 id="schede">Schede Allenamenti</h2>
 
-<h3>Stronglift 5x5</h3>
-<p>Programma di allenamento della atto a sviluppare forza e massa muscolare imparando i fondamentali. Perfetto come primo approccio in palestra per arrivare a ottenere il massimo della forza in poco tempo</p>
-<p>Utilizzare l'app moddata dello <a href="#app-stronglift">stronglift</a> per il tracking dei progressi</p>
-<p>è consigliato sostituire l'esercizio Barbell Row con il Lever Row per migliorare la forza della schiena</p>
-<p><a target="_blank" href="https://stronglifts.com/stronglifts-5x5/">Guida completa ufficiale</a></p>
-<h3>Stronglifts 5x5 Ultra</h3>
-<p>Allenamento diviso per la parte superiore/inferiore del corpo per sviluppare forza e massa muscolare. È una variante di quattro giorni di Stronglifts 5×5 in cui alleni la parte superiore e inferiore del corpo in allenamenti separati.</p>
-<p>Stronglifts 5x5 Ultra ha allenamenti più brevi rispetto a Stronglifts 5×5. Questo può essere utile se i tuoi allenamenti Stronglifts 5×5 stanno diventando troppo lunghi perché ora stai sollevando pesi molto più pesanti rispetto a quando hai iniziato</p>
-<p>è consigliato sostituire l'esercizio Barbell Row con il Lever Row per migliorare la forza della schiena</p>
-<p>Utilizzare l'app moddata dello <a href="#app-stronglift">stronglift</a> per il tracking dei progressi (se hai svolto in precenza lo stronglit 5x5 non è necessario riscaricare l'app)</p>
-<p><a target="_blank" href="https://stronglifts.com/stronglifts-5x5/ultra/">Guida completa ufficiale</a></p>
+    <div class="item-scheda">
+        <div class="scheda-img-containter"><img src="src/stronglift.gif"></div>
 
-<h3>PPL DPC (Push Pull Legs Del Perfezionamento Corporeo)</h3>
-<p>Push Pull Legs con focus bodybuilding con base forza su 3 fondamentali: Bench, Deadlift e Squat</p>
-<a href="https://docs.google.com/viewerng/viewer?url=https://jjstash.github.io/schede/PPL DPC.xlsx">Antemprima</a> - <a href="https://jjstash.github.io/schede/PPL DPC.xlsx">Scarica</a>
+        <h3>Stronglift 5x5</h3>
+        <p>Programma di allenamento della atto a sviluppare forza e massa muscolare imparando i fondamentali. Perfetto come primo approccio in palestra per arrivare a ottenere il massimo della forza in poco tempo</p>
+        <p>Utilizzare l'app moddata dello <a href="#app-stronglift">stronglift</a> per il tracking dei progressi</p>
+        <p>è consigliato sostituire l'esercizio Barbell Row con il Lever Row per migliorare la forza della schiena</p>
+        <p><a target="_blank" href="https://stronglifts.com/stronglifts-5x5/">Guida completa ufficiale</a></p>
+    </div>
+    <div class="item-scheda">
+        <div class="scheda-img-containter"><img src="src/stronglift-ultra.gif"></div>
+        <h3>Stronglifts 5x5 Ultra</h3>
+        <p>Allenamento diviso per la parte superiore/inferiore del corpo per sviluppare forza e massa muscolare. È una variante di quattro giorni di Stronglifts 5×5 in cui alleni la parte superiore e inferiore del corpo in allenamenti separati.</p>
+        <p>Stronglifts 5x5 Ultra ha allenamenti più brevi rispetto a Stronglifts 5×5. Questo può essere utile se i tuoi allenamenti Stronglifts 5×5 stanno diventando troppo lunghi perché ora stai sollevando pesi molto più pesanti rispetto a quando hai iniziato</p>
+        <p>è consigliato sostituire l'esercizio Barbell Row con il Lever Row per migliorare la forza della schiena</p>
+        <p>Utilizzare l'app moddata dello <a href="#app-stronglift">stronglift</a> per il tracking dei progressi (se hai svolto in precenza lo stronglit 5x5 non è necessario riscaricare l'app)</p>
+        <p><a target="_blank" href="https://stronglifts.com/stronglifts-5x5/ultra/">Guida completa ufficiale</a></p>
+    </div>
+    <div class="item-scheda">
+        <div class="scheda-img-containter"><img src="src/stronglift-ultra.gif"></div>
+        <h3>PPL DPC</h3>
+        <h6>Push Pull Legs Del Perfezionamento Corporeo</h6>
+        <p>Push Pull Legs con focus bodybuilding con base forza su 3 fondamentali: Bench, Deadlift e Squat</p>
+        <p><a href="https://docs.google.com/viewerng/viewer?url=https://jjstash.github.io/schede/PPL DPC.xlsx">Antemprima</a> - <a href="https://jjstash.github.io/schede/PPL DPC.xlsx">Scarica</a></p>
+    </div>
+    <div class="item-scheda">
+        <div class="scheda-img-containter"><img src="src/stronglift-ultra.gif"></div>
+        <h3>PPL SSJ STRENGHT</h3>
+        <h6>Push Pull Legs Super Sayan Strenght</h6>
+        <p>Push Pull Legs con focus forza basato sui fondamentali (Bench, Military Press, Deadlift e Squat), sono presenti anche esercizi a corpo tra cui Dips e Chin-ups</p>
+        <p><a href="https://docs.google.com/viewerng/viewer?url=https://jjstash.github.io/schede/PPL SSJ STRENGHT.xlsx">Antemprima</a> - <a href="https://jjstash.github.io/schede/PPL SSJ STRENGHT.xlsx">Scarica</a></p>
+    </div>
+    <div class="item-scheda">
+        <div class="scheda-img-containter"><img src="src/stronglift-ultra.gif"></div>
+        <h3>531 BBB JJBA</h3>
+        <h6>531 Boring But Big Jojo's Bizzare Adventure</h6>
+        <p>Scheda con focus forza che riprende il famoso schema 531 BBB per potenziare i fondamentali oltre il limite, contiene anche esercizi a corpo libero tra cui Dips e, Pull-Up, Chin-up</p>
+        <p>Utilizzare l'app 5/3/1 per gli esercizi fondamentali impostando lo schema "less boring", invece per gli assistance usare il foglio excel</p>
+        <p><a href="https://docs.google.com/viewerng/viewer?url=https://jjstash.github.io/schede/531 BBB JJBA.xlsx">Antemprima</a> - <a href="https://jjstash.github.io/schede/531 BBB JJBA.xlsx">Scarica</a></p>
+    </div>
+    <div class="item-scheda">
+        <div class="scheda-img-containter"><img src="src/stronglift-ultra.gif"></div>
+        <h3>UL UM</h3>
+        <h6>Upper Lower Ultimate Muscle</h6>
+        <p>Scheda con solo 2 giorni di allenamento, il primo per la parte alta del corpo, il secondo per la parte bassa. Ottimo per quando si ha poco tempo in settimana ottenendo un allenamento completo</p>
+        <p><a href="https://docs.google.com/viewerng/viewer?url=https://jjstash.github.io/schede/UL UM.xlsx">Antemprima</a> - <a href="https://jjstash.github.io/schede/UL UM.xlsx">Scarica</a></p>
+    </div>
+</div>
 
-<h3>PPL SSJ STRENGHT (Push Pull Legs Super Sayan Strenght)</h3>
-<p>Push Pull Legs con focus forza basato sui fondamentali (Bench, Military Press, Deadlift e Squat), sono presenti anche esercizi a corpo tra cui Dips e Chin-ups</p>
-<a href="https://docs.google.com/viewerng/viewer?url=https://jjstash.github.io/schede/PPL SSJ STRENGHT.xlsx">Antemprima</a> - <a href="https://jjstash.github.io/schede/PPL SSJ STRENGHT.xlsx">Scarica</a>
+<div class="page-guide">
+    <h2 id="guide">Guide per Esercizi</h2>
+    <div class="guide-row">
+        <a href="https://stronglifts.com/squat/"><div class="guide-item squat-guide">Squat</div></a>
+        <a href="https://stronglifts.com/bench-press/"><div class="guide-item bench-guide">Bench Press</div></a>
+    </div>
+    <div class="guide-row">
+        <a href="https://stronglifts.com/deadlift/"><div class="guide-item dead-guide">Deadlift</div></a>
+        <a href="https://stronglifts.com/barbell-row/"><div class="guide-item bbr-guide">Barbell Row</div></a>
 
-<h3>531 BBB JJBA (531 Boring But Big Jojo's Bizzare Adventure)</h3>
-<p>Scheda con focus forza che riprende il famoso schema 531 BBB per potenziare i fondamentali oltre il limite, contiene anche esercizi a corpo libero tra cui Dips e, Pull-Up, Chin-up</p>
-<p>Utilizzare l'app 5/3/1 per gli esercizi fondamentali impostando lo schema "less boring", invece per gli assistance usare il foglio excel</p>
-<a href="https://docs.google.com/viewerng/viewer?url=https://jjstash.github.io/schede/531 BBB JJBA.xlsx">Antemprima</a> - <a href="https://jjstash.github.io/schede/531 BBB JJBA.xlsx">Scarica</a>
+    </div>
+    <div class="guide-row">
+        <a href="https://stronglifts.com/overhead-press/"><div class="guide-item mil-guide">Overhead Press</div></a>
+        <a href="https://stronglifts.com/pullups/"><div class="guide-item pull-guide">Pullup and Chinup</div></a>
 
-<h3>UL UM (Upper Lower Ultimate Muscle)</h3>
-<p>Scheda con solo 2 giorni di allenamento, il primo per la parte alta del corpo, il secondo per la parte bassa. Ottimo per quando si ha poco tempo in settimana ottenendo un allenamento completo</p>
-<a href="https://docs.google.com/viewerng/viewer?url=https://jjstash.github.io/schede/UL UM.xlsx">Antemprima</a> - <a href="https://jjstash.github.io/schede/UL UM.xlsx">Scarica</a>
-
-<h2 id="guide">Guide</h2>
-<h3>LINK GUIDE PER GLI ESERCIZI FONDAMENTALI</h3>
-<a href="https://stronglifts.com/squat/"><div>Squat</div></a>
-<a href="https://stronglifts.com/bench-press/"><div>Bench Press</div></a>
-<a href="https://stronglifts.com/barbell-row/"><div>Barbell Row</div></a>
-<a href="https://stronglifts.com/overhead-press/"><div>Overhead Press</div></a>
-<a href="https://stronglifts.com/pullups/"><div>Pullup and Chinup</div></a>
-<a href="https://stronglifts.com/dips/"><div>Dips</div></a>
-
+    </div>
+    <div class="guide-row">
+        <a href="https://stronglifts.com/dips/"><div class="guide-item dip-guide">Dips</div></a>
+    </div>
+</div>
 <h2 id="altro">Modded Apps</h2>
 <ul>
     <li id="app-stronglift">StrongLift | <a target="_blank" href="https://liteapks.com/stronglifts-weight-lifting-log.html">Link 1</a> - <a target="_blank" href="https://modyolo.com/stronglifts-weight-lifting-log.html">Link 2</a> | <a target="_blank" href="https://play.google.com/store/apps/details?id=com.stronglifts.app">Not Modded</a> </li>
