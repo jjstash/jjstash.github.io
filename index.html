@@ -107,7 +107,7 @@
             padding: 60px 100px;
         }
 
-        #schede, #guide {
+        #schede, #guide, #altro {
             font-family: "Oswald", sans-serif;
             font-weight: 999;
             text-transform: uppercase;
@@ -210,12 +210,92 @@
             background-image: url("src/deadlift.gif");
         }
 
+        .page-altro {
+            display: flex;
+            flex-direction: column;
+            background-color: #000000aa;
+            backdrop-filter: grayscale(100) invert(100%);
+            padding-top: 100px;
+            color: #fff;
+            text-align: center;
+            padding-bottom: 200px;
+
+        }
+
+        .page-altro h3 {
+            font-family: "Oswald", sans-serif;
+            font-weight: 999;
+            font-size: 70px;
+            margin: 30px;
+        }
+
+        .app-buttons {
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        .app-button {
+            color: #fff;
+            background-color: #ef4da3;
+            font-family: "Oswald", sans-serif;
+            font-weight: 999;
+            width: 400px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 80px;
+        }
+
+        .misc {
+            margin-top: 100px;
+        }
 
         #orari69-image {
-            display: none;
+            height: 0px;
+            width: min(800px);
+            transition: height 0.3s;
+            border-radius: 20px;
+            margin-bottom: 50px;
+        }
+
+        .orario-fermata {
+            width: 900px;
+            padding-top: 50px;
+            color: #fff;
+            background-color: #ef4da3;
+            font-family: "Oswald", sans-serif;
+            font-weight: 999;
+            border-radius: 100px;
+            margin: auto;
         }
 
 
+        .footer-logo img {
+            width: 350px;
+        }
+
+        footer {
+            background-color: #ef4da3;
+            display: flex;
+            justify-content: space-between;
+            text-align: right;
+            align-items: center;
+            padding: 40px;
+
+        }
+
+        .credit-title {
+            font-family: "Oswald", sans-serif;
+            font-weight: 999;
+            font-size: 70px;
+        }
+
+        .credit-names {
+            display: flex;
+            flex-direction: column;
+        }
 
     </style>
 </head>
@@ -303,23 +383,49 @@
         <a href="https://stronglifts.com/dips/"><div class="guide-item dip-guide">Dips</div></a>
     </div>
 </div>
-<h2 id="altro">Modded Apps</h2>
-<ul>
-    <li id="app-stronglift">StrongLift | <a target="_blank" href="https://liteapks.com/stronglifts-weight-lifting-log.html">Link 1</a> - <a target="_blank" href="https://modyolo.com/stronglifts-weight-lifting-log.html">Link 2</a> | <a target="_blank" href="https://play.google.com/store/apps/details?id=com.stronglifts.app">Not Modded</a> </li>
-    <li>Five/Three/One | <a href="#">WIP</a> | <a target="_blank" href="https://play.google.com/store/apps/details?id=dev.strongpigeon.fivethreeone">Not Modded</a></li>
 
-</ul>
-<h2>Misc</h2>
+<div class="page-altro">
+    <h2 id="altro">Altro</h2>
 
-<img src="src/orari69.png" id="orari69-image">
-<a href="#orari69" onclick="showOrari()" id="orari69">Orari Fermata 69</a>
+    <div class="apps">
+        <h3>App</h3>
+        <div class="app-buttons">
+            <a target="_blank" href="https://modyolo.com/stronglifts-weight-lifting-log.html"><div class="app-button">StrongLift (Mod)</div></a>
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=dev.strongpigeon.fivethreeone"><div class="app-button">Five/Three/One</div></a>
+        </div>
+
+    </div>
+    <div class="misc">
+        <h3>Misc</h3>
+
+        <div onclick="showOrari()" class="orario-fermata">
+            <div  id="orari69">Orari Fermata 69</div>
+            <img src="src/orari69.png" id="orari69-image">
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-logo">
+        <img src="src/Logo.png">
+    </div>
+    <div class="credits">
+        <h3 class="credit-title">Credits</h3>
+        <div class="credit-names">
+            <span>OrangeXarot</span>
+            <span>TheMAUII</span>
+        </div>
+    </div>
+</footer>
+
 <script>
     function showOrari() {
         const IMAGE = document.querySelector("#orari69-image");
-        if (IMAGE.style.display != "block")
-            IMAGE.style.display = "block";
+        const size  = "600px"
+        if (IMAGE.style.height != size)
+            IMAGE.style.height = size;
         else
-            IMAGE.style.display = "none";
+            IMAGE.style.height = "0px";
     }
 </script>
 
