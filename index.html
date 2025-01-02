@@ -123,6 +123,10 @@
             font-size: 90px;
         }
 
+        #schede-sub {
+            margin: 30px 80px 60px;
+        }
+
         .scheda-img-containter {
             margin: auto;
             height: 500px;
@@ -376,28 +380,30 @@
     </style>
 </head>
 <body>
+
+<!-------------------- HOMEPAGE ---------------------->
 <div class="homepage">
     <img src="src/Logo.png" class="logo">
     <img class="homepage-gif" src="src/homepage-gif.gif" id="homepage-gif">
     <div class="homepage-buttons">
         <a href="#schede"><div class="homepage-button">Schede<br />Allenamenti</div></a> <a href="#guide"><div class="homepage-button">Guide per </br>Esercizi</div></a>
-
     </div>
-
     <a href="#altro"><div class="homepage-button button-altro">Altro</div></a>
-
 </div>
+
+<!-------------------- SCHEDE -------------------->
 <div class="page-schede">
     <h2 id="schede"><a class="no-dec" href="#schede">Schede Allenamenti</a></h2>
+    <h4 id="schede-sub">Tutti i pesi nelle schede sono indicativi: adattali al tuo livello e alle tue capacità per un allenamento sicuro ed efficace</h4>
 
     <div class="item-scheda" id="stronglift5x5">
         <div class="scheda-img-containter"><img src="src/stronglift.gif"></div>
-
         <h3 ><a class="white no-dec" href="#stronglift5x5">Stronglift 5x5</a></h3>
         <p>Programma di allenamento atto a sviluppare forza e massa muscolare imparando i fondamentali. Perfetto come primo approccio in palestra per arrivare a ottenere il massimo della forza in poco tempo</p>
         <p>Utilizzare l'app moddata dello stronglift per il tracking dei progressi</p>
         <p><a target="_blank" href="https://stronglifts.com/stronglifts-5x5/">Guida completa ufficiale</a></p>
     </div>
+
     <div class="item-scheda" id="stronglift5x5ultra">
         <div class="scheda-img-containter"><img src="src/stronglift-ultra.gif"></div>
         <h3><a class="white no-dec" href="#stronglift5x5ultra">Stronglifts 5x5 Ultra</a></h3>
@@ -406,6 +412,25 @@
         <p>Utilizzare l'app moddata dello <a href="#app-stronglift">stronglift</a> per il tracking dei progressi (se hai svolto in precenza lo stronglit 5x5 non è necessario riscaricare l'app)</p>
         <p><a target="_blank" href="https://stronglifts.com/stronglifts-5x5/ultra/">Guida completa ufficiale</a></p>
     </div>
+
+    <div class="item-scheda" id="ppl-dpc-rev">
+        <img class="new" src="src/new.png">
+        <div class="scheda-img-containter"><img src="src/dpc.gif"></div>
+        <h3><a class="white no-dec" href="#ppl-dpc-rev">PPL DPC REV</a></h3>
+        <h6>Push Pull Legs Del Perfezionamento Corporeo Revisited</h6>
+        <p>Push Pull Legs con focus bodybuilding atto a costruire un fisico perfetto e potente. Sono presenti anche i 3 fondamentali (Bench, Deadlift e Squat) per incrementare la forza</p>
+        <p><!--<a href="https://docs.google.com/viewerng/viewer?url=https://jjstash.github.io/schede/PPL DPC.xlsx">Anteprima</a> - --><a href="https://jjstash.github.io/schede/PPL DPC REV.xlsx">Scarica</a></p>
+    </div>
+
+    <div class="item-scheda" id="pb-pbb-p">
+    <img class="new" src="src/new.png">
+    <div class="scheda-img-containter"><img src="src/pbpbbp.gif"></div>
+    <h3><a class="white no-dec" href="#pb-pbb-p">PB PBB P</a></h3>
+    <h6>Peanutbutter Pure Bodybuilding Program</h6>
+    <p>Scheda con 3 giorni di allenamento focalizzati interamente sul bodybuilding. Non contiene fondamentali in modo da dare più spazio agli esercizi di isolamento</p>
+    <p><a href="https://jjstash.github.io/schede/PB PBB P.xlsx">Scarica</a></p>
+</div>
+
     <div class="item-scheda" id="bpdl-blssj">
         <img class="new" src="src/new.png">
         <div class="scheda-img-containter"><img src="src/bpdlblssj.gif"></div>
@@ -414,14 +439,7 @@
         <p>Scheda con due giorni di allenamento focalizzati principalmente per la parte superiore del corpo senza però trascurare anche le gambe. I fondamentali presenti in questa scheda sono la bench press e deadlift</p>
         <p><!--<a href="https://docs.google.com/viewerng/viewer?url=https://jjstash.github.io/schede/BPDL BLSSJ.xlsx">Anteprima</a> - --><a href="https://jjstash.github.io/schede/BPDL BLSSJ.xlsx">Scarica</a></p>
     </div>
-    <div class="item-scheda" id="ppl-dpc">
-        <img class="new" src="src/new.png">
-        <div class="scheda-img-containter"><img src="src/dpc.gif"></div>
-        <h3><a class="white no-dec" href="#ppl-dpc">PPL DPC</a></h3>
-        <h6>Push Pull Legs Del Perfezionamento Corporeo</h6>
-        <p>Push Pull Legs con focus bodybuilding atto a costruire un fisico perfetto e potente. Sono presenti anche i 3 fondamentali (Bench, Deadlift e Squat) per incrementare la forza</p>
-        <p><!--<a href="https://docs.google.com/viewerng/viewer?url=https://jjstash.github.io/schede/PPL DPC.xlsx">Anteprima</a> - --><a href="https://jjstash.github.io/schede/PPL DPC.xlsx">Scarica</a></p>
-    </div>
+
     <div class="item-scheda" id="ppl-ssj-strenght">
         <div class="scheda-img-containter"><img src="src/ssj.gif"></div>
         <h3><a class="white no-dec" href="#ppl-ssj-strenght">PPL SSJ STRENGHT</a></h3>
@@ -429,6 +447,7 @@
         <p>Push Pull Legs con focus forza basato sui fondamentali (Bench, Military Press, Deadlift e Squat), sono presenti anche esercizi a corpo libero tra cui Dips e Chin-ups</p>
         <p><!--<a href="https://docs.google.com/viewerng/viewer?url=https://jjstash.github.io/schede/PPL SSJ STRENGHT.xlsx">Anteprima</a> - --><a href="https://jjstash.github.io/schede/PPL SSJ STRENGTH.xlsx">Scarica</a></p>
     </div>
+
     <div class="item-scheda" id="531-bbb-jjba">
         <div class="scheda-img-containter"><img src="src/jjba.gif"></div>
         <h3><a class="white no-dec" href="#531-bbb-jjba">531 BBB JJBA</a></h3>
@@ -437,6 +456,7 @@
         <p>Utilizzare l'app 5/3/1 per gli esercizi fondamentali impostando lo schema "less boring", invece per gli assistance usare il foglio excel</p>
         <p><!--<a href="https://docs.google.com/viewerng/viewer?url=https://jjstash.github.io/schede/BBB JJBA.xlsx">Anteprima</a> - --><a href="https://jjstash.github.io/schede/BBB JJBA.xlsx">Scarica</a></p>
     </div>
+
     <div class="item-scheda" id="ul-um">
         <div class="scheda-img-containter"><img src="src/um.gif"></div>
         <h3><a class="white no-dec" href="#ul-um">UL UM</a></h3>
@@ -446,6 +466,7 @@
     </div>
 </div>
 
+<!-------------------- GUIDE --------------------->
 <div class="page-guide">
     <h2 id="guide"><a class="no-dec" href="#guide">Guide per Esercizi</a></h2>
     <div class="guide-row">
@@ -463,35 +484,37 @@
     </div>
 </div>
 
+<!-------------------- ALTRO -------------------->
 <div class="page-altro">
     <h2 id="altro"><a class="no-dec" href="#altro">Altro</a></h2>
-
+    <!---------- APPS ---------->
     <div class="apps" id="apps">
-        <h3><a class="white no-dec" href="#apps">App</h3>
+        <h3><a class="white no-dec" href="#apps">App</a></h3>
         <div class="app-buttons">
             <a target="_blank" href="https://modyolo.com/stronglifts-weight-lifting-log.html" id="app-stronglift"><div class="app-button">StrongLift (Mod)</div></a>
             <a target="_blank" href="https://play.google.com/store/apps/details?id=dev.strongpigeon.fivethreeone"><div class="app-button">Five/Three/One</div></a>
         </div>
-
     </div>
 
+    <!---------- PLAYLISTS ---------->
     <div class="playlist" id="our-playlists">
         <h3><a class="white no-dec" href="#our-playlists">Our Playlists</a></h3>
             <div class="playlist-item">
-                    <a target="_blank" href="https://open.spotify.com/playlist/780pHqfzlm3jQJd4JEeShk?si=d1dd4ea1103f4502">
+                <a target="_blank" href="https://open.spotify.com/playlist/780pHqfzlm3jQJd4JEeShk?si=d1dd4ea1103f4502">
                     <img src="src/stronglift.jpeg">
                     <p>🔵STRONGLIFT</p>
                     <p class="author">by TheMAUII</p>
                 </a>
             </div>
+
             <div class="playlist-item">
                 <a target="_blank" href="https://open.spotify.com/playlist/6S8dkLkzWdUHR3Mss3DhSp?si=4d17eed389fe4e34">
                     <img src="src/flexin.jpeg">
                     <p>🔵Flexin'</p>
                     <p class="author">by TheMAUII</p>
                 </a>
-
             </div>
+
             <div class="playlist-item">
                 <a target="_blank" href="https://open.spotify.com/playlist/2W42lLDWAu4sq3bZx8Dlou?si=857baa26cca34c38">
                     <img src="src/workout.jpeg">
@@ -499,14 +522,15 @@
                     <p class="author">by Fla28</p>
                 </a>
             </div>
+
             <div class="playlist-item">
                 <a target="_blank" href="https://open.spotify.com/playlist/6jdq3W1iFFS1jEDmazZZWY?si=12d332ae90cb4b9c">
                     <img src="src/ugpmmd.jpeg">
                     <p>Ultimate Gym Playlist Macho Men Duro</p>
                     <p class="author">by Funnysuperst</p>
                 </a>
-
             </div>
+
             <div class="playlist-item">
                 <a target="_blank" href="https://open.spotify.com/playlist/1T3wDDA5EDIQWfQQET2WXk?si=da0b9ed678444023">
                     <img src="src/h.jpeg">
@@ -515,10 +539,10 @@
                 </a>
             </div>
         </div>
-    <div class="misc" id="misc">
-        <h3><a class="white no-dec" href="#misc
-">Misc</h3>
 
+    <!---------- MISC ---------->
+    <div class="misc" id="misc">
+        <h3><a class="white no-dec" href="#misc">Misc</a></h3>
         <div onclick="showOrari()" class="orario-fermata">
             <div  id="orari69">Orari Fermata 69</div>
             <img src="src/orari69.png" id="orari69-image">
@@ -526,6 +550,7 @@
     </div>
 </div>
 
+<!-------------------- FOOTER -------------------->
 <footer>
     <div class="footer-logo">
         <img src="src/Logo.png" onclick="easteregg()">
@@ -569,6 +594,5 @@
     }
 
 </script>
-
 </body>
 </html>
