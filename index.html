@@ -541,7 +541,7 @@
         <h3><a class="white no-dec" href="#misc">Misc</a></h3>
         <div onclick="showOrari()" class="orario-fermata">
             <div  id="orari69">Orari Fermata 69</div>
-            <img src="src/orari69.png" id="orari69-image">
+            <img src="src/orari69.png" id="orari69-image" alt="orari69">
         </div>
     </div>
 </div>
@@ -549,7 +549,7 @@
 <!-------------------- FOOTER -------------------->
 <footer>
     <div class="footer-logo">
-        <img src="src/Logo.png" onclick="easteregg()">
+        <img src="src/Logo.png" alt="logo" onclick="easteregg()">
     </div>
     <div class="credits">
         <h3 class="credit-title">Credits</h3>
@@ -560,13 +560,13 @@
     </div>
 </footer>
 
-<img src="src/eg1.gif" class="easteregg">
+<img src="src/eg1.gif" alt="eg" class="easteregg">
 
 <script>
     function showOrari() {
         const IMAGE = document.querySelector("#orari69-image");
         const size  = "600px"
-        if (IMAGE.style.height != size)
+        if (IMAGE.style.height !== size)
             IMAGE.style.height = size;
         else
             IMAGE.style.height = "0px";
