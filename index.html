@@ -115,16 +115,18 @@
 
         .magics {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: center;
+            margin-top: 20px;
         }
 
         .magic {
-            font-size: 20px;
+            font-size: 30px;
             text-transform: uppercase;
             font-family: "Oswald", sans-serif;
             background: #ef4da3;
 
-            width: 150px;
+            margin: 0 20px;
+            width: 270px;
             border-radius: 20px;
             transition: color 0.3s, opacity 0.3s, background 0.3s;
         }
@@ -498,7 +500,9 @@
         <div class="magic ssnew" onclick="showSchede('snew')">Fresh & New</div>
         <div class="magic ssspack" onclick="showSchede('sspack')">Starter Pack</div>
         <div class="magic sselite" onclick="showSchede('selite')">Elite Workouts</div>
-        <div class="magic ssoffical" onclick="showSchede('sofficial')">Official Picks</div>
+    </div>
+    <div class="magics">
+        <div class="magic ssofficial" onclick="showSchede('sofficial')">Official Picks</div>
         <div class="magic sscomm" onclick="showSchede('scomm')">Community Picks</div>
     </div>
     <h4 id="schede-sub">Tutti i pesi nelle schede sono indicativi: adattali al tuo livello e alle tue capacità per un allenamento sicuro ed efficace</h4>
@@ -558,7 +562,7 @@
         <p><!--<a href="https://docs.google.com/viewerng/viewer?url=https://jjstash.github.io/schede/PPL DPC.xlsx">Anteprima</a> - --><a href="https://jjstash.github.io/schede/PPL DPC REV.xlsx">Scarica</a></p>
     </div>
 
-    <div class="item-scheda sofficial " id="pb-pbb-p">
+    <div class="item-scheda sofficial" id="pb-pbb-p">
         <div class="scheda-img-containter"><img src="src/pbpbbp.gif" alt="pbpbbp"></div>
         <h3><a class="white no-dec" href="#pb-pbb-p">PB PBB P</a></h3>
         <h6>Peanutbutter Pure Bodybuilding Program</h6>
