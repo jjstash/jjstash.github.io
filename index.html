@@ -87,6 +87,9 @@
             width: 200px;
         }
 
+        .hidden {
+            display: none;
+        }
 
         .page-schede {
             display: flex;
@@ -110,12 +113,40 @@
             margin-top: 50px;
         }
 
+        .magics {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .magic {
+            font-size: 20px;
+            text-transform: uppercase;
+            font-family: "Oswald", sans-serif;
+            background: #ef4da3;
+
+            width: 150px;
+            border-radius: 20px;
+            transition: color 0.3s, opacity 0.3s, background 0.3s;
+        }
+
+        .magic-selected {
+            background: white;
+            color: #ef4da3;
+
+        }
+
+        .magic-unselected {
+            opacity: 60%;
+        }
+
+
+
         .item-scheda {
             padding: 60px 100px;
         }
 
         #schede, #guide, #altro {
-            font-family: "Oswald", sans-serif;
+            font-family: " ", sans-serif;
             font-weight: 999;
             text-transform: uppercase;
             text-align: center;
@@ -463,9 +494,16 @@
 <!-------------------- SCHEDE -------------------->
 <div class="page-schede">
     <h2 id="schede"><a class="no-dec" href="#schede">Schede Allenamenti</a></h2>
+    <div class="magics">
+        <div class="magic ssnew" onclick="showSchede('snew')">Fresh & New</div>
+        <div class="magic ssspack" onclick="showSchede('sspack')">Starter Pack</div>
+        <div class="magic sselite" onclick="showSchede('selite')">Elite Workouts</div>
+        <div class="magic ssoffical" onclick="showSchede('sofficial')">Official Picks</div>
+        <div class="magic sscomm" onclick="showSchede('scomm')">Community Picks</div>
+    </div>
     <h4 id="schede-sub">Tutti i pesi nelle schede sono indicativi: adattali al tuo livello e alle tue capacità per un allenamento sicuro ed efficace</h4>
 
-    <div class="item-scheda" id="stronglift5x5">
+    <div class="item-scheda scomm sspack" id="stronglift5x5">
         <div class="scheda-img-containter"><img src="src/stronglift.gif" alt="stronglift"></div>
         <h3><a class="white no-dec" href="#stronglift5x5">Stronglift 5x5</a></h3>
         <p>Programma di allenamento atto a sviluppare forza e massa muscolare imparando i fondamentali. Perfetto come primo approccio in palestra per arrivare a ottenere il massimo della forza in poco tempo</p>
@@ -473,7 +511,7 @@
         <p><a target="_blank" href="https://stronglifts.com/stronglifts-5x5/">Guida completa ufficiale</a></p>
     </div>
 
-    <div class="item-scheda" id="stronglift5x5ultra">
+    <div class="item-scheda scomm" id="stronglift5x5ultra">
         <div class="scheda-img-containter"><img src="src/stronglift-ultra.gif" alt="stronglift-ultra"></div>
         <h3><a class="white no-dec" href="#stronglift5x5ultra">Stronglifts 5x5 Ultra</a></h3>
         <p>Stronglifts 5x5 Ultra ha allenamenti più brevi rispetto a Stronglifts 5×5. Questo può essere utile se i tuoi allenamenti Stronglifts 5×5 stanno diventando troppo lunghi perché ora stai sollevando pesi molto più pesanti rispetto a quando hai iniziato</p>
@@ -482,7 +520,7 @@
         <p><a target="_blank" href="https://stronglifts.com/stronglifts-5x5/ultra/">Guida completa ufficiale</a></p>
     </div>
 
-    <div class="item-scheda" id="d3vws">
+    <div class="item-scheda snew sspack sofficial" id="d3vws">
         <img class="new" src="src/new.png" alt="new">
         <div class="scheda-img-containter"><img src="src/d3vws.gif" alt="d3vws"></div>
         <h3><a class="white no-dec" href="#d3vws">D3VWS</a></h3>
@@ -492,7 +530,7 @@
     </div>
 
 
-    <div class="item-scheda" id="stufmw">
+    <div class="item-scheda snew selite sofficial" id="stufmw">
         <img class="new" src="src/new.png" alt="new">
         <div class="scheda-img-containter"><img src="src/stufmw.gif" alt="stufmw"></div>
         <h3><a class="white no-dec" href="#stufmw">STUFMW</a></h3>
@@ -501,7 +539,7 @@
         <p><a href="https://jjstash.github.io/schede/STUFMW.xlsx">Scarica</a></p>
     </div>
 
-    <div class="item-scheda" id="nw">
+    <div class="item-scheda scomm snew" id="nw">
         <img class="new" src="src/new.png" alt="new">
         <div class="scheda-img-containter"><img src="src/nw.gif" alt="nw"></div>
         <h3><a class="white no-dec" href="#nw">NW</a></h3>
@@ -512,7 +550,7 @@
         <p><a href="https://jjstash.github.io/schede/NW.xlsx">Scarica</a></p>
     </div>
 
-    <div class="item-scheda" id="ppl-dpc-rev">
+    <div class="item-scheda sofficial" id="ppl-dpc-rev">
         <div class="scheda-img-containter"><img src="src/dpc.gif" alt="dpc"></div>
         <h3><a class="white no-dec" href="#ppl-dpc-rev">PPL DPC REV</a></h3>
         <h6>Push Pull Legs Del Perfezionamento Corporeo Revisited</h6>
@@ -520,7 +558,7 @@
         <p><!--<a href="https://docs.google.com/viewerng/viewer?url=https://jjstash.github.io/schede/PPL DPC.xlsx">Anteprima</a> - --><a href="https://jjstash.github.io/schede/PPL DPC REV.xlsx">Scarica</a></p>
     </div>
 
-    <div class="item-scheda" id="pb-pbb-p">
+    <div class="item-scheda sofficial " id="pb-pbb-p">
         <div class="scheda-img-containter"><img src="src/pbpbbp.gif" alt="pbpbbp"></div>
         <h3><a class="white no-dec" href="#pb-pbb-p">PB PBB P</a></h3>
         <h6>Peanutbutter Pure Bodybuilding Program</h6>
@@ -528,7 +566,7 @@
         <p><a href="https://jjstash.github.io/schede/PB PBB P.xlsx">Scarica</a></p>
     </div>
 
-    <div class="item-scheda" id="bpdl-blssj">
+    <div class="item-scheda sofficial selite" id="bpdl-blssj">
         <div class="scheda-img-containter"><img src="src/bpdlblssj.gif" alt="bpdlblssj"></div>
         <h3><a class="white no-dec" href="#bpdl-blssj">BPDL BLSSJ</a></h3>
         <h6>Bench Press DeadLift Broly Legendary Super Sayan</h6>
@@ -536,7 +574,7 @@
         <p><!--<a href="https://docs.google.com/viewerng/viewer?url=https://jjstash.github.io/schede/BPDL BLSSJ.xlsx">Anteprima</a> - --><a href="https://jjstash.github.io/schede/BPDL BLSSJ.xlsx">Scarica</a></p>
     </div>
 
-    <div class="item-scheda" id="ppl-ssj-strenght">
+    <div class="item-scheda sofficial" id="ppl-ssj-strenght">
         <div class="scheda-img-containter"><img src="src/ssj.gif" alt="ssj"></div>
         <h3><a class="white no-dec" href="#ppl-ssj-strenght">PPL SSJ STRENGHT</a></h3>
         <h6>Push Pull Legs Super Sayan Strenght</h6>
@@ -544,7 +582,7 @@
         <p><!--<a href="https://docs.google.com/viewerng/viewer?url=https://jjstash.github.io/schede/PPL SSJ STRENGHT.xlsx">Anteprima</a> - --><a href="https://jjstash.github.io/schede/PPL SSJ STRENGTH.xlsx">Scarica</a></p>
     </div>
 
-    <div class="item-scheda" id="531-bbb-jjba">
+    <div class="item-scheda sofficial selite" id="531-bbb-jjba">
         <div class="scheda-img-containter"><img src="src/jjba.gif" alt="jjba"></div>
         <h3><a class="white no-dec" href="#531-bbb-jjba">531 BBB JJBA</a></h3>
         <h6>531 Boring But Big Jojo's Bizzare Adventure</h6>
@@ -553,7 +591,7 @@
         <p><!--<a href="https://docs.google.com/viewerng/viewer?url=https://jjstash.github.io/schede/BBB JJBA.xlsx">Anteprima</a> - --><a href="https://jjstash.github.io/schede/BBB JJBA.xlsx">Scarica</a></p>
     </div>
 
-    <div class="item-scheda" id="ul-um">
+    <div class="item-scheda sofficial" id="ul-um">
         <div class="scheda-img-containter"><img src="src/um.gif" alt="um"></div>
         <h3><a class="white no-dec" href="#ul-um">UL UM</a></h3>
         <h6>Upper Lower Ultimate Muscle</h6>
@@ -687,6 +725,46 @@
         newEasterEgg.classList.add("east-anim");
 
         document.body.appendChild(newEasterEgg);
+    }
+
+    let lastClicked = "";
+    function showSchede(type) {
+        ALL = document.querySelectorAll(".item-scheda");
+        ONE = document.querySelectorAll("."+type);
+        ALB = document.querySelectorAll(".magic");
+        ONB = document.querySelector(".s"+type)
+
+        if (type === lastClicked) {
+            ALL.forEach(scheda => {
+                scheda.classList.remove("hidden");
+            });
+
+            ALB.forEach(button => {
+                button.classList.remove("magic-selected");
+                button.classList.remove("magic-unselected")
+            })
+
+            lastClicked = "";
+        } else {
+            ALL.forEach(scheda => {
+                scheda.classList.add("hidden");
+            });
+
+            ONE.forEach(scheda => {
+                scheda.classList.remove("hidden");
+            });
+
+            ALB.forEach(button => {
+                button.classList.remove("magic-selected");
+                button.classList.add("magic-unselected")
+            })
+
+            ONB.classList.remove("magic-unselected");
+            ONB.classList.add("magic-selected");
+
+            lastClicked = type;
+        }
+
     }
 
 </script>
