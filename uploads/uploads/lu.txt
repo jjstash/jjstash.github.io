@@ -1,0 +1,11 @@
+Stand Power | Scratch Card | Golden Card
+
++ split
+- loop
+
+10 SC+ 
+    Stand Power
+        Find Stand
+    Golden Card
+        Stand Power-
+        Golden Card-
